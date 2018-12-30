@@ -1,0 +1,14 @@
+{
+  "name": "day3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "day3_1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "array-unique": "^0.3.2"
+  }
+}
