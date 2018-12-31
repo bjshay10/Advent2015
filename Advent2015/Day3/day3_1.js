@@ -17,14 +17,14 @@ lineReader.on('line', (line) => {
         if (e === ">") x++;
         if (e === "v") y++;
         if (e === "<") x--;
-        houses.push([`'${x},${y}'`]);
+        houses.push([`${x},${y}`]);
     });
     
     for(i = 0; i < houses.length; i++) {
         if (visited.length === 0) {
             visited.push(houses[i]);
         } else {
-            console.log(`${houses.length}`);
+            // console.log(`${houses.length}`);
             for (j = 0; j < visited.length; j++) {
                 var temp1 = houses[i].toString();
                 var temp2 = visited[j].toString();
@@ -46,7 +46,9 @@ lineReader.on('line', (line) => {
 
 
 
-// input.split("")
+
+
+// var v = input.split("")
 // .reduce((data, ch) => {
 //     if (ch === "^") data.y--;
 //     if (ch === ">") data.x++;
@@ -60,3 +62,5 @@ lineReader.on('line', (line) => {
 //     y: 0,
 //     visited: new Set
 // }).visited.size;
+
+// console.log(v);
