@@ -12,7 +12,8 @@ const isContainDoubleLetter = string => DOUBLE_LETTERS.some(item => string.index
 const isContainRestrictedLetters = string => RESTRICTED_LETTERS.some(item => string.indexOf(item) !== -1);
 
 const isNiceString = string => !!(isContainThreeVowels(string) && isContainDoubleLetter(string) && !isContainRestrictedLetters(string));
-
+// const isNiceString = string => !!(isContainThreeVowels(string));
+// const isNiceString = string => !!(isContainRestrictedLetters(string));
 // Result is a composition of all methods above
 const result = INPUT.reduce((total, string) => isNiceString(string) ? ++total : total, 0);
 

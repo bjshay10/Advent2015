@@ -1,3 +1,7 @@
 255 from other
 currently 0
 currently 246
+got 255 after fixing the checking for 2 consecutive letters
+
+day 2
+55 from other

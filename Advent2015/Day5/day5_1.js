@@ -33,17 +33,15 @@ function cntVowels(s) {
 function chkCharCount(str) {
     // console.log(`2. Checking for 2 characters in a row in ${str}`);
     let charCount = 0;
-    for (a = 0; a < str.length; a++){
+    for (a = 0; a < str.length-1; a++){
         let t1 = str.substring(a, a+1);
         let t2 = str.substring(a+1,a+2);
-        if ((a+2) >= str.length) {
-            continue;
-        }
+
         if (t1 == t2) {
             charCount++;
         }
     }
-    if (charCount < 1) {
+    if (charCount === 0) {
         return false;
     } else {
         return true;
